@@ -2,9 +2,8 @@ public class AverageSpeedInKilometer {
     public static void main(String[] args) {
         // Runners data
         double givenMile = 24;
-        double constMile = 1;
         double constKilometer = 1.6;
-        double amtKilometer = 24 * 1.6;
+        double amtKilometer = givenMile * constKilometer;
         double avgKilometer = amtKilometer / 2;
 
         /* We were given 1hr40min35sec
