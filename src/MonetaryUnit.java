@@ -11,6 +11,8 @@ public class MonetaryUnit {
         // Monetary unit
         int dollarAmount = amount / 100;
         int centAmount = amount % 100;
+
+        // Display
         System.out.println(dollarAmount + " dollar(s) and " + centAmount + " cent(s)");
     }
 }
