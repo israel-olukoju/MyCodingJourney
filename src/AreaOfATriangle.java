@@ -22,17 +22,15 @@ public class AreaOfATriangle {
         float y3 = input.nextFloat();
 
         // Area of a triangle
-        float side1 = x1 + y1;
-        float side2 = x2 + y2;
-        float side3 = x3 + y3;
+        float side1 = y1 * x1;
+        float side2 = y2 * x2;
+        float side3 = y3 * x3;
         // Total sides (s)
-        float s = (side1 + side2 + side3) / 2;
+        float s = (side1 + side2 + side3) / 3;
         // Area
-        float a = s * (s - side1) * (s - side2) * (s - side3);
-        float area = (float) Math.pow(a, 0.5);
+        float area = (float) Math.pow(s * ((s) - side1) * ((s) - side2) * ((s) - side3), 0.5);
 
         // Display
         System.out.println("The area of the triangle is " + area);
-        System.out.println(s);
     }
 }
