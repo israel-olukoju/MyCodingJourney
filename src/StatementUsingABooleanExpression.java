@@ -5,7 +5,7 @@ public class StatementUsingABooleanExpression {
         Scanner input = new Scanner(System.in);
 
         // Prompt user for an integer number
-        System.out.print("Enter any integer: ");
+        System.out.print("Enter any integer of multiples of 10: ");
         int count = input.nextInt();
         boolean number = count % 10 == 0;
         if (number) {
