@@ -15,7 +15,7 @@ public class ComputeThePerimeterOfATriangle {
         // Perimeter of a triangle
         float perimeter = a + b + c;
 
-        if ((a + b > c) ^ (a + c > b) ^ (b + c > a)) {
+        if ((a + b > c) && (a + c > b) && (b + c > a)) {
             System.out.println("The perimeter of the triangle is " + perimeter);
         }
         else {
