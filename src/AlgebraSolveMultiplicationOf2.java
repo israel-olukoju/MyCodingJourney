@@ -18,6 +18,7 @@ public class AlgebraSolveMultiplicationOf2 {
         System.out.print("f: ");
         float f = input.nextFloat();
 
+        // Cramer's rule
         float x = ((c * e) - (b * f)) / ((a * e) - (b * d));
         float y = ((a * f) - (c * d)) / ((a * e) - (b * d));
 

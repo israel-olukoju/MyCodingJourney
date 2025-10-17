@@ -17,7 +17,7 @@ public class IncreasePayImproved {
         float newIncreasedSalaryBy1 = increaseSalaryBy1 + salaryAmount;
 
         if (score >= 90) {
-            System.out.println("Congrats, you get a salary increase by 3%" + "\nYour new salary is $" + newIncreasedSalaryBy3);
+            System.out.println("Congrats, your salary increase by 3%" + "\nYour new salary is $" + newIncreasedSalaryBy3);
         } else {
             System.out.println("Work harder next year" + "\nYour new salary is $" + newIncreasedSalaryBy1);
         }

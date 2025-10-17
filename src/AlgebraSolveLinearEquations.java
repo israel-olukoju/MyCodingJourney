@@ -6,6 +6,6 @@ public class AlgebraSolveLinearEquations {
 
         // Solving for y
         double y = ((3.4 * 5.9) - (44.5 * 2.1) / (3.4 * .55) - (50.2 * 2.1));
-        System.out.println("2.1x + 55y = 5.9" + "\ny = " + y);
+        System.out.println("2.1x + .55y = 5.9" + "\ny = " + y);
     }
 }
