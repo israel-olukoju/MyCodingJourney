@@ -14,9 +14,12 @@ public class TwoCircles {
         float centerYCircle2 = input.nextFloat();
         float radiusCircle2 = input.nextFloat();
 
-        if ((centerXCircle1 + centerYCircle1 > centerXCircle2 + centerYCircle2) && (radiusCircle1 > radiusCircle2)) {
+        // Distance between the two point
+        float distance = (float)Math.pow(Math.pow(centerXCircle2 - centerXCircle1, 2) + Math.pow(centerYCircle2 - centerYCircle1, 2), 0.5);
+
+        if (distance <= (radiusCircle1 - radiusCircle2)) {
             System.out.println("circle2 is inside circle 1");
-        } else if ((centerXCircle1 + centerYCircle1 < centerXCircle2 + centerYCircle2) && (radiusCircle1 > radiusCircle2 || radiusCircle1 < radiusCircle2)) {
+        } else if (distance <= (radiusCircle1 + radiusCircle2)) {
             System.out.println("circle2 overlaps circle1");
         }
         else {
