@@ -1,4 +1,5 @@
 public class NumbersDivisibleBy5Or6NotBoth {
+    /** Main method*/
     public static void main(String[] args) {
         int count = 0;
         for (int i = 100; i <= 200; i++) {
